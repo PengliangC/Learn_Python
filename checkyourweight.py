@@ -1,7 +1,7 @@
-#weight = input('input your weight:')
-#height=input ('input your height：')
-weight=84
-height=1.78
+weight = float(input('input your weight:'))
+height=float(input('input your height：'))
+#weight=84
+#height=1.78
 bmi=weight/(height*height)
 print('bmi: %2f' % bmi)
 if bmi<18.5:
