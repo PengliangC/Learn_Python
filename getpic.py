@@ -1,4 +1,4 @@
-# coding=gbk
+# coding=utf-8
 #<a href="http://travel.163.com/food/#f=endnav">
 import urllib.request
 import re
@@ -9,5 +9,6 @@ data = urllib.request.urlopen(url).read()
 data=data.decode('utf-8')
 r1 = re.compile(reg)
 c_t = r1.findall(data)
+print("len：",len(c_t))
 
 print(c_t)
