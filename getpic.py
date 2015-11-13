@@ -1,8 +1,7 @@
 # coding=utf-8
 import urllib.request
 import re
-#url = 'http://tieba.baidu.com/p/2460150866'
-url='http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=%E7%99%BE%E5%BA%A6'
+url = 'http://desk.zol.com.cn/'
 filename='C:\\projects\\PythonTest\\pic\\'
 #reg = r'src="(.+?\.jpg)" pic_ext'
 reg = r'src="(.+\.jpg)"'
