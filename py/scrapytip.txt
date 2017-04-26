@@ -1,0 +1,16 @@
+scrapy startproject tutorial
+
+scrapy crawl quotes  //quotes-name
+
+scrapy crawl quotes -o quotes.json  //输出json
+
+
+
+scrapy shell 'http://quotes.toscrape.com/page/1/'
+	>>> response.css('title')
+	>>> response.css('title::text').extract()
+	>>> response.xpath('//title')
+	>>> response.css("div.quote")[0]
+	>>> response.css("div.quote")[0].css("span.text::text").extract_first()
+	>>> response.css('li.next a::attr(href)').extract_first()
+
